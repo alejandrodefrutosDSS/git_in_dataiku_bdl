@@ -86,8 +86,11 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"name","type":"string"},
+      {"name":"count","type":"bigint"}
+    ],
+    "userModified": false
   },
   "typeSystemVersion": "V2",
   "dkuProperties": [],
