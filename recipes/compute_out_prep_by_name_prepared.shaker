@@ -13,6 +13,10 @@
       {
         "d": true,
         "name": "count_2"
+      },
+      {
+        "d": true,
+        "name": "count_3"
       }
     ]
   },
@@ -50,7 +54,7 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
@@ -58,6 +62,32 @@
         "expression": "count+2",
         "column": "count_2",
         "errorColumn": ""
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "count+3",
+        "column": "count_3",
+        "errorColumn": ""
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "columns": [
+          "count_3"
+        ],
+        "reorderAction": "AT_END",
+        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }
@@ -90,6 +120,7 @@
   "analysisColumnData": {},
   "flagNumericValues": true,
   "columnWidthsByName": {
+    "count_3": 100,
     "count_2": 100,
     "name": 100,
     "count": 100
