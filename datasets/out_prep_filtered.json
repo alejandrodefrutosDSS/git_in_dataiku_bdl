@@ -66,12 +66,12 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1788465984500
+    "lastModifiedOn": 1788466044843
   },
   "tags": [],
   "params": {
     "connection": "filesystem_managed",
-    "path": "${projectKey}/out_prep_by_name",
+    "path": "${projectKey}/out_prep_filtered",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -87,8 +87,11 @@
   },
   "schema": {
     "columns": [
+      {"name":"id","type":"bigint"},
+      {"name":"id-1000","type":"bigint"},
       {"name":"name","type":"string"},
-      {"name":"count","type":"bigint"}
+      {"name":"age","type":"bigint"},
+      {"name":"mod","type":"string"}
     ],
     "userModified": true
   },
