@@ -13,7 +13,7 @@ out_prep_by_name_df = out_prep_by_name.get_dataframe()
 # NB: DSS also supports other kinds of APIs for reading and writing data. Please see doc.
 
 python_df = out_prep_by_name_df # For this sample code, simply copy input to output
-
+#comment dev2
 
 # Write recipe outputs
 python = dataiku.Dataset("python")
