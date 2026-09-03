@@ -89,7 +89,8 @@
     "columns": [
       {"name":"name","type":"string"},
       {"name":"count","type":"bigint"},
-      {"name":"count_2","type":"bigint"}
+      {"name":"count_2","type":"bigint"},
+      {"name":"count_3","type":"bigint"}
     ],
     "userModified": true
   },
