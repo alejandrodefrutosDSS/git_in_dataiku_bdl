@@ -50,7 +50,7 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
@@ -58,6 +58,21 @@
         "expression": "count+2",
         "column": "count_2",
         "errorColumn": ""
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "StringTransformer",
+      "params": {
+        "mode": "TO_LOWER",
+        "columns": [
+          "name"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "truncate_limit": 0
       },
       "alwaysShowComment": false
     }
